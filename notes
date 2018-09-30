@@ -1,0 +1,13 @@
+## DA database arquitecture
+
+```
+mORMot+FPC+Lazarus:
+First, a server is made. With an embedded sqlite3 engine. Testing: Windows; running: Linux.
+Followed by a windows/linux client app. With local and remote (the server) database (single change: 2 lines of code).
+The above allows for very easy testing and GUI.
+Followed by an Android app with LAMW with local database for easy testing. Followed by the remote database connection.
+Database logic is shared between all clients and the server(s).
+As an extra, Javascript clients (JSON, remote server) allow for many more clients.
+```
+
+http://forum.lazarus.freepascal.org/index.php/topic,39251.15.html
